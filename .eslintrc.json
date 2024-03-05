@@ -1,3 +1,17 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:cypress/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "next"
+  ],
+  "ignorePatterns": ["types/graphql.ts"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "@next/next/google-font-display": "off",
+    "@next/next/google-font-preconnect": "off",
+    "@next/next/no-page-custom-font": "off",
+    "@next/next/no-img-element": "off"
+  }
 }

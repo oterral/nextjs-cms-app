@@ -16,6 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/pretty-print-json@2.1/dist/css/pretty-print-json.css"
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
